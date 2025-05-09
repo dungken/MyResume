@@ -1,0 +1,251 @@
+% Elegant CV template with beautiful typography and professional design
+% Designed to work with standard LaTeX installations
+\documentclass[11pt,a4paper]{article}
+
+% Essential packages that enhance typography and design
+\usepackage[top=1.0cm, bottom=1.0cm, left=1.5cm, right=1.5cm]{geometry} % Optimized margins for more content space
+\usepackage{enumitem}    % For customizing lists
+\usepackage{titlesec}    % For customizing section titles
+\usepackage{xcolor}      % For colors
+\usepackage{hyperref}    % For links
+\usepackage{tabularx}    % For tables
+\usepackage{array}       % For enhanced tables
+\usepackage{fancyhdr}    % For header and footer
+\usepackage{setspace}    % For line spacing
+\usepackage{tcolorbox}   % For colored boxes
+\usepackage{microtype}   % For typography enhancements
+\usepackage{fontawesome} % For icons
+\usepackage{ragged2e}    % For better text alignment
+\usepackage{tikz}        % For graphics
+\usepackage{booktabs}    % For professional tables
+
+% Use Helvetica font (modern sans-serif font) instead of Palatino
+\usepackage[scaled=0.92]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Define sophisticated color palette (refined for better visual harmony)
+\definecolor{primaryblue}{RGB}{30, 85, 125}     % Deeper, more professional blue for headings
+\definecolor{secondaryblue}{RGB}{65, 125, 175}  % Refined lighter blue for accents
+\definecolor{darkgray}{RGB}{60, 60, 60}         % Darker gray for better readability
+\definecolor{lightgray}{RGB}{225, 225, 225}     % Light gray for dividers
+\definecolor{skillheading}{RGB}{45, 95, 135}    % Enhanced blue-gray for skill headings
+\definecolor{background}{RGB}{250, 250, 250}    % Subtle background color
+\definecolor{accentgray}{RGB}{240, 240, 240}    % Accent gray for highlights
+
+% Setup hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=secondaryblue,
+    urlcolor=secondaryblue,
+    pdftitle={Dung Ken - Resume},
+    pdfauthor={Dung Ken},
+    pdfsubject={Software Developer Resume},
+    pdfkeywords={software, developer, fullstack, react, flutter, spring boot}
+}
+
+% Page style
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\small\color{darkgray}\thepage}
+
+% Customize section titles with elegant design
+\titleformat{\section}
+    {\Large\bfseries\color{primaryblue}}
+    {}{0em}
+    {}
+    [{\color{lightgray}\titlerule[1pt]}]
+\titlespacing{\section}{0pt}{10pt}{5pt}
+
+% Set up nice line spacing
+\setstretch{1.0}
+
+% Custom commands to maintain consistent styling
+
+% Command for contact info with icons
+\newcommand{\contactdetail}[3]{
+    {\small\color{secondaryblue}#1~}{\small\color{darkgray}#3}
+}
+
+% Command for icon-based contact info
+\newcommand{\iconcontact}[3]{
+    \textcolor{secondaryblue}{#1}~\textcolor{darkgray}{\href{#2}{#3}}
+}
+
+% Skill heading with consistent formatting
+\newcommand{\skillheading}[1]{
+    {\bfseries\color{skillheading}#1:}
+}
+
+\newcommand{\experience}[3]{
+    \noindent{\large\bfseries\color{primaryblue}#1} \hfill {\color{darkgray}#2}\\[0.05cm]
+    \noindent{\small\itshape\color{secondaryblue}#3}\\[0.05cm]
+}
+
+% Removed skill bar command as requested
+
+% Removed highlight box command as it's no longer used
+
+% Begin document
+\begin{document}
+
+% Set page background color
+\pagecolor{background}
+
+% Remove page number from first page
+\thispagestyle{empty}
+
+% Header with elegant design
+\begin{center}
+    \textcolor{primaryblue}{
+        \begin{tikzpicture}
+        \node[rectangle, fill=none, text width=\textwidth, align=center, inner sep=0pt] {
+            {\fontsize{22}{24}\selectfont\textbf{HA VAN DUNG}}
+        };
+        \end{tikzpicture}
+    }\\[0.1cm]
+    {\large\color{secondaryblue}\textit{Fullstack Developer}}\\[0.2cm]
+    
+    % Contact info with centered layout and icons
+    \begin{tabular}{ccccc}
+        \iconcontact{\faEnvelope}{mailto:dungken2211@gmail.com}{dungken2211@gmail.com} & \hspace{0.3cm} &
+        \iconcontact{\faPhone}{tel:032 725 0461}{032 725 0461} & \hspace{0.3cm} &
+        \iconcontact{\faGithub}{https://github.com/dungken}{github.com/dungken} \\[0.15cm]
+        \iconcontact{\faLinkedin}{https://linkedin.com/in/dungdev}{linkedin.com/in/dungdev} & \hspace{0.3cm} &
+        \iconcontact{\faYoutube}{https://youtube.com/@dungkenn}{youtube.com/@dungkenn} & \hspace{0.3cm} &
+        \iconcontact{\faMapMarker}{}{Thu Duc, Ho Chi Minh City}
+    \end{tabular}
+\end{center}
+
+\vspace{0.1cm}
+
+% Profile with justified text
+\section{Professional Profile}
+\color{darkgray}\justifying
+Passionate fullstack developer specializing in modern web technologies and mobile applications. Experienced in building robust solutions using React, Flutter, Spring Boot, ASP.NET Core, and Node.js. Committed to creating clean, maintainable code and building intuitive user experiences that solve real-world problems.
+
+% Technical Skills section with organized layout and visual elements
+\section{Technical Skills}
+
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+    \begin{itemize}[leftmargin=*,itemsep=2pt,parsep=0pt,label=\textcolor{secondaryblue}{$\bullet$}]
+        \item \skillheading{Frontend} React, TypeScript, JavaScript, Flutter, Dart, Redux, Bootstrap, Material UI
+        \item \skillheading{Backend} Java (Spring Boot), C\# (.NET Core), Node.js, Express.js, RESTful API
+        \item \skillheading{Database} MySQL, PostgreSQL, MongoDB, SQL Server, Entity Framework, JPA/Hibernate
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*,itemsep=2pt,parsep=0pt,label=\textcolor{secondaryblue}{$\bullet$}]
+        \item \skillheading{DevOps \& Tools} Docker, Git, Swagger, Postman
+        \item \skillheading{Cloud \& Authentication} Cloudinary, OAuth 2.0, JWT Authentication
+        \item \skillheading{Architecture \& Principles} Clean Architecture, SOLID Principles, Design Patterns
+    \end{itemize}
+\end{tabularx}
+
+% Removed skill bars as requested
+
+% Project Experience section with elegant formatting and enhanced visual structure
+\section{Project Experience}
+
+\experience{VinCharge Subscription Platform}{3/2025 -- Present}{{\footnotesize Flutter — Spring Boot — PostgreSQL — Cloudinary — VNPay}}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\triangleright$}]
+    \item Developed a comprehensive subscription management platform for electric vehicle charging
+    \item Created a Flutter mobile app with multilingual support and QR-based payment system
+    \item Built a Spring Boot backend with VNPay payment gateway integration and JWT authentication
+    \item Designed a PostgreSQL database with proper relationships for efficient data management
+    \item Implemented asynchronous processing with task executors and scheduled tasks
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Speaking English with AI (Mobile App)}{2/2025 -- 5/2025}{{\footnotesize Flutter | Dart | BLoC | Hive | GetIt}}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\triangleright$}]
+    \item Developed an AI-powered conversation practice app using Flutter and Dart
+    \item Created role-play scenarios with contextual conversations between users and AI
+    \item Architected the application using BLoC pattern for robust state management
+    \item Implemented speech recognition and processing with optimized audio recording
+    \item Designed dependency injection using GetIt for loosely coupled components
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Trello Clone (Web Application)}{2024}{{\footnotesize React | Redux | Material UI | Node.js | MongoDB | Socket.IO}}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\triangleright$}]
+    \item Built a responsive kanban board with advanced drag-and-drop functionality
+    \item Developed a React frontend with Material UI and Redux Toolkit state management
+    \item Created a Node.js/Express backend with MongoDB database integration
+    \item Implemented real-time collaboration using Socket.IO for instant updates
+    \item Designed JWT authentication with refresh token mechanism for secure access
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Scientific Research Platform}{2023 -- 2024}{{\footnotesize React | TypeScript | Spring Boot | MySQL | JWT}}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\triangleright$}]
+    \item Created a knowledge management system for academic research and collaboration
+    \item Built a React frontend with searchable theory database and discussion forum
+    \item Developed a Spring Boot backend with ontology model (COKB) implementation
+    \item Implemented role-based access control with JWT authentication
+    \item Designed MySQL database with proper entity relationships
+\end{itemize}
+
+\vspace{0.3cm}
+
+\experience{Coolmate E-commerce Platform}{2023}{{\footnotesize React | TypeScript | ASP.NET Core | SQL Server | Docker}}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\triangleright$}]
+    \item Developed a full-featured e-commerce solution with React/TypeScript frontend
+    \item Created an ASP.NET Core Web API backend with comprehensive product management
+    \item Implemented secure authentication with JWT, OAuth, and two-factor verification
+    \item Designed SQL Server database with Entity Framework Core
+    \item Containerized the application with Docker for consistent deployment
+\end{itemize}
+
+\vspace{0.3cm}
+
+% Educational Content Creation
+\section{Educational Content Creation}
+
+\experience{Leetcode Top Interview 150 - Video Series}{2023 -- Present}{{\footnotesize Data Structures | Algorithms | Problem Solving}}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\bullet$}]
+    \item Created 38+ detailed video tutorials covering top Leetcode interview problems
+    \item Provided comprehensive explanations with algorithm analysis and complexity discussions
+    \item Developed a structured learning path from foundational to advanced algorithmic concepts
+    \item Shared optimal approaches and interview strategies
+    \item YouTube Channel: \href{https://www.youtube.com/playlist?list=PLE9QkkVvuT1kc_pgqSPTvgggPg37ZHA6V}{Leetcode Top Interview 150 Series}
+\end{itemize}
+\vspace{0.3cm}
+
+% Areas of Expertise section removed as requested
+
+% Certifications with enhanced layout
+\section{Certifications \& Achievements}
+
+\begin{tabularx}{\textwidth}{@{}X X@{}}
+    \textbf{\color{primaryblue}International Collegiate Programming Contest} &
+    \textbf{\color{primaryblue}Scientific Research Certificate} \\[0.1cm]
+    \begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\bullet$}]
+        \item Participated in prestigious programming competition
+        \item Solved complex problems under time constraints
+        \item Developed advanced algorithmic thinking skills
+        \item \href{https://github.com/dungken/MyResume/blob/master/Certificates/icpc.png}{\textcolor{secondaryblue}{Certificate Link}}
+    \end{itemize} &
+    \begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\bullet$}]
+        \item Recognition for research in computer science
+        \item Completed project contributing to academic field
+        \item Published findings in research proceedings
+        \item \href{https://github.com/dungken/MyResume/blob/master/Certificates/nckh.png}{\textcolor{secondaryblue}{Certificate Link}}
+    \end{itemize}
+\end{tabularx}
+
+% Bottom section with Education and Languages
+\section{Education}
+
+\experience{Bachelor of Science in Information Technology}{2022 -- 2026}{{\footnotesize University of Transport and Communications, Ho Chi Minh City Campus}}
+
+% Languages section updated
+\section{Languages}
+\begin{itemize}[leftmargin=*,itemsep=0pt,parsep=0pt,topsep=0pt,label=\textcolor{secondaryblue}{$\bullet$}]
+    \item \skillheading{Vietnamese} Native proficiency
+    \item \skillheading{English} Professional working proficiency
+\end{itemize}
+
+
+\end{document}
