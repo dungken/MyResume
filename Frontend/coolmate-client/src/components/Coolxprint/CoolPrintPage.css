@@ -1,0 +1,30 @@
+.coolprint-page {
+    font-family: Arial, sans-serif;
+}
+
+.why-choose .icon-section {
+    padding: 20px;
+}
+
+.how-it-works {
+    background-color: #0044cc;
+}
+
+.how-it-works-container h3 {
+    color: #fff;
+}
+
+.icon-section i,
+.how-it-works i {
+    font-size: 2rem;
+    color: #0044cc;
+}
+
+.product-grid .card-title {
+    font-size: 1.1rem;
+}
+
+.card-img-top {
+    /* height: 150px; */
+    object-fit: cover;
+}

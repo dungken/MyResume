@@ -1,0 +1,133 @@
+.wp-site-footer{
+     background: #000;
+     padding: 30px 0px;
+     color: #fff;
+     font-family: Pangea, sans-serif;
+}
+
+.site-footer-before{
+     min-height: 172px;
+     margin-bottom: 30px;
+     border-bottom: 1px solid #5b5757;
+     align-items: center;
+}
+
+.listen-contribute{
+     flex-basis: 35%;
+}
+.listen-contribute h3{
+     font-weight: 600;
+     font-size: 21px;
+     line-height: 27px;
+     color: #fff;
+     margin-bottom: 8px;
+}
+.listen-contribute p{
+     color: #d9d9d9;
+     font-size: 13px;
+     line-height: 1.5;
+}
+.listen-contribute a{
+     display: inline-block;
+     background: #2F5ACF;
+     color: #d9d9d9;
+     padding: 15px 30px;
+     border-radius: 15px;
+     font-size: 14px;
+     font-weight: bold;
+     margin-top: 25px;
+}
+.listen-contribute a:hover{
+     background: #fff;
+     color: #000;
+}
+.contact{
+     flex-basis: 25%;
+     display: flex;
+     justify-content: start;   
+}
+.contact ul li{
+     align-items: center;
+     justify-content: start;  
+     margin-bottom: 20px;
+}
+.contact ul li h4{
+     font-size: 13px;
+}
+.contact ul li p{
+     font-weight: bold;
+     line-height: 1.4;
+}
+.icon-hotline {
+     font-size: 30px;
+     padding: 0px 20px 0px 0px;
+}
+.info-hotline {
+     line-height: 1.6;
+}
+.social-network{
+     flex-basis: 30%;
+}
+.social-network ul{
+     justify-content: space-between;
+}
+.social-network ul li{
+     margin-right: 30px;
+     cursor: pointer;
+}
+.social-network ul li a{
+     display: block;
+     color: #fff;
+     font-size: 40px;
+}
+.site-footer-inner{
+     line-height: 1.6;
+     border-bottom: 1px solid #736f6f;
+}
+.site-footer-inner ul h4{
+     font-weight: bold;
+     font-size: 13px;
+}
+.site-footer-inner ul li a{
+     font-size: 13px;
+     color: #D9D9D9;
+     display: block;
+     padding: 10px 0px;
+}
+.site-footer-inner ul li:hover a{
+     color: yellow;
+}
+
+.site-footer-after{
+     padding: 20px 0px;
+     line-height: 1.8;
+     font-size: 11px;
+}
+
+.certification{
+     gap: 20px;
+}
+.certification li{
+     width: 88px;
+     height: 40px;
+}
+.certification li a{ 
+     display: block;
+}
+
+.certification li a img{
+     max-width: 100%;
+     height: 40px;
+}
+
+.backtop {
+     display: inline-block;
+     background: #2F5ACF;
+     color: #Fff;
+     cursor: pointer;
+     padding: 6px 8px;
+     border-radius: 30px;
+     font-size: 30px;
+     margin: 20px;
+     display: none;
+}

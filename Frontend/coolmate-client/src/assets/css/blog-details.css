@@ -1,0 +1,175 @@
+.wp-detail-blogs {
+    padding: 50px 40px;
+    line-height: 1.5;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.breadcrumb {
+    padding: 10px 0px;
+    gap: 5px;
+    justify-content: start;
+}
+.breadcrumb li a {
+    color: #373737;
+}
+.breadcrumb li:last-child a {
+    font-weight: bold;
+}
+.title-blog {
+    color: #231f20;
+    font-size: 35px;
+    margin-top: 4px;
+    margin-bottom: 30px;
+}
+.head-detail-blog .desc-short {
+    font-size: 20px;
+    color: #000;
+    padding: 0px 0px 18px 0px;
+}
+.date-post {
+    color: #8e8e8e;
+    margin-bottom: 20px;
+}
+
+.content-blog {
+    flex-basis: 60%;
+}
+.content-blog a {
+    text-decoration: underline;
+    color: blue;
+}
+.content-blog h2 {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.content-blog p {
+    margin-bottom: 18px;
+}
+.content-blog figure {
+    margin: 0;
+    text-align: center;
+}
+.content-blog figure img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+.content-blog figure figcaption {
+    font-style: italic;
+    padding: 20px;
+    color: #545454;
+}
+.wp-info-first {
+    background: #f1f1f1;
+    padding: 20px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+}
+.info-first {
+    list-style: inside;
+    font-weight: bold;
+}
+.info-first li {
+    padding: 10px;
+}
+
+.view-more a {
+    text-decoration: none;
+}
+
+.wp-info-author {
+    border-radius: 20px;
+    padding: 15px;
+    border: 1px dashed #d9d9d9;
+    background-color: hsla(0, 0%, 85.1%, 0.3);
+    justify-content: start;
+    align-items: center;
+    gap: 25px;
+    margin: 20px 0px;
+}
+.avatar {
+    border-radius: 5px;
+}
+.avatar img {
+    width: 120px;
+    max-width: 120px;
+}
+.info-author p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+}
+.info-author p:last-child {
+    font-size: 14px;
+}
+.table-of-content {
+    flex-basis: 35%;
+    background: #f1f1f1;
+    padding: 25px;
+    border-radius: 15px;
+    height: 390px;
+    font-weight: bold;
+}
+
+.active {
+    /* top: 0;
+    right: 100px;
+    left: 63%;
+    z-index: 100;
+    position: fixed; */
+}
+
+.table-of-content h2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+.table-of-content ol {
+    border-top: 1px solid #b8b4b4;
+    padding: 10px 0px;
+}
+.table-of-content ol li {
+    padding: 2px 0px;
+}
+.table-of-content ol li a {
+    color: #000;
+    font-size: 14px;
+}
+.can-like {
+    position: relative;
+    padding: 0px 50px;
+}
+.can-like .button-next-prev-can-like .btn-next {
+    position: absolute;
+    top: 47%;
+    left: 0;
+    background: none;
+    border: none;
+}
+.can-like p {
+    font-weight: bold;
+    font-size: 30px;
+    color: #231f20;
+    padding: 20px 0px;
+}
+
+.can-like-item {
+    flex-basis: 30%;
+}
+.can-like-item a img {
+    width: 357px;
+    height: 262px;
+    max-width: 100%;
+    border-radius: 25px;
+}
+.desc-item p {
+    font-size: 14px;
+    color: #8e8e8e;
+    padding: 10px;
+}
+.desc-item .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    padding: 0px 0px 20px 10px;
+    cursor: pointer;
+}

@@ -1,0 +1,263 @@
+.wp-cart {
+    padding: 20px 0px;
+}
+
+.info-client {
+    border-right: 1px solid #c5bfbf;
+    flex-basis: 55%;
+    padding-right: 20px;
+}
+.name-client {
+    background: rgb(241, 241, 241);
+    padding: 16px 14px;
+    border-radius: 10px;
+    color: #231f20;
+}
+.name-client h2,
+.payments h2 {
+    font-weight: bold;
+    font-size: 36px;
+}
+.name-client p {
+    font-size: 16px;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+.name-client p span {
+    color: #2f5acf;
+}
+
+.wp-info-transport {
+    margin-top: 30px;
+}
+.head-info-transport {
+    padding: 10px 20px 20px 0px;
+    color: #231f20;
+    align-items: center;
+}
+.head-info-transport h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+.head-info-transport a {
+    color: #2f5acf;
+    font-weight: bold;
+}
+
+.form-info {
+    /* padding: 0px 10px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+.form-info input[id="fullname"],
+.form-info input[id="phone-number"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #e1dddd;
+    color: #000;
+    margin-bottom: 20px;
+}
+.form-info input[id="email"],
+.form-info input[id="address"],
+.form-info input[id="note-address"] {
+    width: 100%;
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #e1dddd;
+    color: #000;
+    margin-bottom: 20px;
+}
+.form-info select[id="city"],
+.form-info select[id="district"],
+.form-info select[id="commune"] {
+    width: 30%;
+    height: 40px;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid #e1dddd;
+    color: #000;
+    margin-bottom: 20px;
+}
+.form-info .form-controll-100:last-child {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.form-info .form-controll-100:last-child {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+.form-info .form-controll-100:last-child input {
+    width: 18px;
+    height: 18px;
+}
+.form-info .form-controll-100:last-child label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #231f20;
+}
+
+.payments .form-controll-100 {
+    justify-content: start;
+    gap: 30px;
+    border: 1px solid #d2caca;
+    border-radius: 20px;
+    padding: 10px 0px;
+    margin: 10px 0px 5px 0px;
+}
+.payments .form-controll-100 input {
+    width: 20px;
+    margin: 0 20px;
+}
+.payments #COD {
+    border: 1px solid #2f5acf !important;
+}
+.payments .form-controll-100:not(#COD) {
+    opacity: 0.5;
+}
+.payments .form-controll-100:hover {
+    border: 1px solid #2f5acf !important;
+}
+.payments p {
+    font-size: 14px;
+    color: #231f20;
+    padding: 20px 0px;
+    font-weight: bold;
+    line-height: 1.6;
+}
+.payments p a {
+    font-weight: bold;
+    color: #2f5acf;
+}
+
+.label-input {
+    align-items: center;
+    gap: 30px;
+}
+.label-input img {
+    width: 35px;
+    height: auto;
+}
+.label-input label {
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+#checkout {
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+#checkout:hover {
+    background-color: #e6e1e1;
+    color: #000;
+}
+
+.order-product p.enter-code {
+    border: 1px solid #2148c3;
+    padding: 15px 10px;
+    border-radius: 20px;
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.order-product h2 {
+    font-size: 32px;
+    font-weight: bold;
+}
+.head-cart-info-order {
+    justify-content: space-between;
+    /* padding: 20px 0px; */
+    border-bottom: 1px solid #ccc8c8;
+    text-transform: uppercase;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.4);
+}
+.list-order-product {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px 0px;
+}
+.order-item {
+    gap: 25px;
+    margin: 10px;
+}
+.order-item a img {
+    width: 126px;
+    height: 186px;
+    border-radius: 10px;
+}
+
+.name-product {
+    font-size: 16px;
+    color: #000;
+    font-weight: bold;
+}
+.sub-name-product {
+    font-size: 12px;
+    padding: 5px 0px;
+    display: block;
+}
+
+.wp-option-product input {
+    width: 60px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 22px;
+    padding: 10px;
+    font-weight: bold;
+}
+.wp-option-product .price {
+    font-size: 14px;
+    color: #242424;
+    font-weight: bold;
+}
+
+.option-product {
+    display: flex;
+    gap: 20px;
+}
+.option-product select {
+    /* width: 86px; */
+    height: 46px;
+    border-radius: 20px;
+    padding: 5px;
+}
+.trash-btn {
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+}
+.total-cart .sub-total .temporary,
+.total-cart .sub-total .discount,
+.total-cart .sub-total .delivery-costs {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.sub-total {
+    border-top: 1px solid #a6a0a0;
+    border-bottom: 1px solid #a6a0a0;
+}
+.total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #a6a0a0;
+}
+
+.refund {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}

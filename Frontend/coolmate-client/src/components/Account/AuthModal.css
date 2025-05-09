@@ -1,0 +1,12 @@
+.auth-modal {
+    max-width: 400px;
+}
+
+.auth-modal .modal-body h5 {
+    font-weight: bold;
+    text-align: center;
+}
+
+.auth-modal .modal-body .form-group label {
+    font-weight: 600;
+}

@@ -1,0 +1,73 @@
+.order-history {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.order-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.order-header {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.order-header h5 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.order-status {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+}
+
+.order-status.hoanthanh {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.order-body {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-info {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.product-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.product-image {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.product-details h6 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.order-summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}

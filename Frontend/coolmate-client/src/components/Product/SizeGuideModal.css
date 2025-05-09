@@ -1,0 +1,61 @@
+.size-guide-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.size-guide-modal .slider-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.size-guide-modal .slider-container .col-md-6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.size-guide-modal .slider-value {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.size-guide-modal .body-type-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.size-guide-modal .body-type-img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.size-guide-modal .suggestion {
+    font-style: italic;
+    color: #555;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.size-guide-modal .size-chart-table th,
+.size-guide-modal .size-chart-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.size-guide-modal .size-note {
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.size-guide-modal .tab-content {
+    min-height: 400px; /* Adjust as needed */
+}

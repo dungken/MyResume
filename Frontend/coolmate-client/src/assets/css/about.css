@@ -1,0 +1,542 @@
+.wp-banner-about{
+    position: relative;
+}
+.wp-info-banner {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(transparent,#000);
+}
+.info-banner{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-banner h1{
+    font-size: 56px;
+    font-weight: bold;
+}
+.info-banner p{
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+}
+.info-banner a{
+    background: #fff;
+    padding: 20px 60px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    font-weight: bold;
+    margin-top: 40px;
+    color: #000;
+}
+.info-banner a:hover{
+    background: #e3e0e0;
+}
+.wp-tab-about{
+    position: absolute;
+    bottom: -26px;
+    left: 24%;
+}
+.tab-about{
+    align-items: center;
+    gap: 20px;
+}
+.tab-about .tab-link{
+    align-items: center;
+}
+.tab-about .tab-link:nth-child(2){
+    border: 2px solid #2f5acf;
+    border-radius: 30px;
+}
+.tab-about .tab-link a{
+    align-items: center;
+    gap: 20px;
+    color: #000;
+    background: #f4f2f2;
+    font-size: 18px;
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+.tab-about .tab-link a img{
+    width: 50px;
+    max-width: 100%;
+    height: 50px;
+}
+.tab-about .tab-link a i{
+    font-size: 20px;
+}
+.wp-site-about{
+    padding: 90px 0px;
+}
+.img-coolmate{
+    flex-basis: 40%;
+}
+.img-coolmate h2{
+    font-weight: bold;
+    font-size: 50px;
+    padding: 21px 0px;
+}
+.img-coolmate img{
+    width: 525px;
+    max-width: 100%;
+}
+.wp-desc-coolmate{
+    flex-basis: 55%;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #231F20;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.desc-coolmate{
+    list-style: disc;
+}
+
+.desc-coolmate li p{
+    margin-bottom: 10px;
+}
+.cultural-coolmate{
+    background: #000;
+    color: #fff;
+    justify-content: center;
+    gap: 100%;
+    flex-wrap: wrap;
+    padding: 40px 10px;
+}
+.wp-head-cultural-coolmate{
+    padding: 30px 0px;
+    gap: 80px;
+}
+.wp-head-cultural-coolmate img{
+    width: 630px;
+    max-width: 100%;
+    flex-basis: 54%;
+}
+.head-cultural-coolmate{
+    flex-basis: 50%;
+}
+.head-cultural-coolmate h2{
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0px;
+}
+.head-cultural-coolmate p{
+    font-size: 16px;
+    color: #fff;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.wp-target-coolmate{
+    margin: 30px 0px;
+}
+.target-coolmate{
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: start;
+}
+.target-item{
+    flex-basis: 23.5%;
+    background: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 25px;
+    align-items: center;
+    gap: 15px;
+}
+.cnt-target{
+    font-size: 40px;
+    color: #2F5ACF;
+    font-weight: bold;
+}
+.desc-target{
+    font-size: 16px;
+    line-height: 1.2;
+}
+.join-now{
+    background: #fff;
+    display: block;
+    padding: 20px 60px;
+    border-radius: 25px;
+    color: #000;
+    font-weight: bold;
+    margin: 28px 0px;
+    text-transform: uppercase;
+}
+.join-now:hover{
+    background: #cbcaca;
+}
+.wp-opportunity{
+    background: #4083ff;
+    padding: 35px 0px;
+}
+.head-opportunity{
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+}
+.head-opportunity h2{
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.head-opportunity p{
+    padding: 20px 260px;
+    font-size: 18px;
+    margin-bottom: 26px;
+}
+.head-jobs select{
+    padding: 10px 20px;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 10px;
+    border: 1px solid #000;
+}
+.list-job-requirement{
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 25px;
+    padding: 20px 40px;
+}
+.job-requirement-item{
+    flex-basis: 27%;
+    background: #fff;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px 20px 5px 50px;
+}
+.icon-job{
+    position: absolute;
+    top: 22px;
+    left: -40px;
+    background: #eeee1b;
+    border-radius: 20px;
+}
+.icon-job img{
+    width: 80px;
+    max-width: 100%;
+    height: 80px;
+}
+.name-job{
+    display: flex;
+    padding: 4px 0px;
+    align-items: center;
+}
+.name-job span{
+    background: #4083ff;
+    color: #fff;
+    padding: 6px 15px;
+    border-radius: 5px;
+}
+.name-job h2{
+    padding: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #231F20;
+}
+
+.sub-name{
+    font-size: 14px;
+    margin-bottom: 20px;
+    padding: 5px 0px;
+    font-weight: bold;
+}
+.address, .income{
+    background: #F1F1F1;
+    border-radius: 5px;
+    padding: 8px 5px;
+    font-size: 12px;
+    color: #231F20;
+    margin-bottom: 5px;
+}
+
+.foot-job{
+    padding: 20px 0px;
+    font-size: 12px;
+}
+.foot-job a{
+    color: #2F5ACF;
+    font-weight: bold;
+}
+.wp-pagination{
+    padding: 42px 0px 0px 0px;
+    position: relative;
+}
+
+.pagination{
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.pagination li a{
+    color: #fff;
+    font-size: 14px;
+}
+.btn-next-prev-pagination .btn-prev{
+    position: absolute;
+    left: 450px;
+    top: 44px;
+    bottom: 0;
+}
+
+.btn-next-prev-pagination .btn-next{
+    position: absolute;
+    bottom: 0;
+    left: 450px;
+    top: 44px;
+    background: none;
+    border: none;
+}
+
+.btn-next-prev-pagination .btn-prev i, .btn-next-prev-pagination .btn-next i{
+    color: #fff;
+}
+
+.wp-sent-cv{
+    background: rgba(235, 235, 235, 0.5);
+    padding: 20px;
+}
+.sent-cv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sent-cv h2{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px 0px 0px 0px;
+    line-height: 1.5;
+}
+.sent-cv p{
+    font-size: 16px;
+    text-align: center;
+    padding: 20px 300px;
+    line-height: 1.6;
+}
+.link-sent {
+    text-align: center;
+    display: inline-block;
+    background: #2F5ACF;
+    color: #fff;
+    padding: 20px 60px;
+    border-radius: 25px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    
+}
+.link-sent:hover {
+    border: none;
+    background: #dfdcdc;
+    color: #000;
+}
+.wp-update-info{
+    margin: 30px 0px;
+}
+.update-info{
+    flex-wrap: wrap;
+}
+.wp-update-info h2{
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 20px 0px;
+}
+.new-activity{
+    flex-basis: 50%;
+    background: #2F5ACF;
+    color: #fff;
+    border-radius: 20px;
+    height: 880px;
+}
+.new-activity h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 24px 20px 0px 40px;
+    margin-bottom: 20px;
+}
+
+.wp-list-new-activity{
+    padding: 0px 25px;
+    height: 800px;
+    overflow: auto;
+}
+.list-new-activity{
+    background: #2F5ACF;
+    color: #fff;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+.list-new-activity li{
+    flex-basis: 47%;
+    border-radius: 20px;
+    background: #a2abfb;
+}
+.list-new-activity li p{
+    color: #fff;
+    padding: 10px;
+    font-size: 11px;
+}
+.list-new-activity li a img{
+    width: 308px;
+    max-width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.list-new-activity li a {
+    display: block;
+}
+.title-new{
+    color: #fff;
+    padding: 0px 10px;
+    font-size: 18px;
+}
+.desc-short{
+    font-size: 14px;
+    color: #fff;
+    padding: 14px 10px;
+    line-height: 1.4;
+}
+.list-new-activity li a:last-child{
+    color: rgb(249, 248, 108);
+    padding: 20px;
+    font-size: 14px;
+}
+
+.bulletin-board{
+    flex-basis: 49%;
+    background: #D9D9D9;
+    border-radius: 25px;
+}
+.bulletin-board h2{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    padding: 20px;
+}
+.wp-list-bulletin-board{
+    padding: 10px 34px;
+    overflow: auto;
+    height: 800px;
+}
+.list-bulletin-board{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.list-bulletin-board li{
+    flex-basis: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px;
+}
+.list-bulletin-board li a{
+    display: block;
+}
+
+.list-bulletin-board li a img{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+}
+.list-bulletin-board li div p:first-child{
+    font-size: 11px;
+    color: rgb(110, 121, 140);
+    padding: 15px 0px;
+}
+.list-bulletin-board li div p.desc-short{
+    font-size: 14px;
+    color: #231F20;
+    padding: 0;
+    margin: 15px 0px;
+}
+.list-bulletin-board li div a.date{
+    display: inline-block;
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+.list-bulletin-board li div a.download{
+    background: #d9d956;
+    padding: 10px;
+    border-radius: 13px;
+    display: inline-block;
+    font-size: 12px;
+    color: #000;
+}
+.come-to-join{
+    background: rgb(249, 248, 108);
+    border-radius: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.come-to-join-left h1{
+    font-size: 58px;
+    padding: 80px 45px;
+}
+.come-to-join-left p{
+    font-size: 13px;
+    color: #231F20;
+    padding: 0px 22px 20px 50px;
+}
+.come-to-join-left a{
+    background: #fff;
+    color: #000;
+    padding: 20px 30px;
+    margin-left: 50px;
+    margin-top: 32px;
+    display: inline-block;
+    font-size: 14px;
+    border-radius: 25px;
+}
+.come-to-join-left a:hover{
+    background: #d9d8d8;
+    color: #000;
+}
+.come-to-join-right img{
+    width: 659px;
+    height: 480px;
+    border-radius: 30px;
+}
+.social-network{
+    justify-content: center;
+    gap: 200px;
+    padding: 30px 0px;
+}
+.social-network img{
+    width: 37px;
+    height: 37px;
+}
+.fb, .tiktok, .linkedin{
+    align-items: center;
+    gap: 20px;
+}
+.page-title {
+    font-weight: bold;
+    line-height: 1.5;
+}
+.page-title a{
+    text-decoration: underline;
+    color: #000;
+}
