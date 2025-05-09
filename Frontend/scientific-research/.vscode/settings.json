@@ -1,0 +1,8 @@
+{
+    "editor.padding.bottom": 0,
+    "editor.scrollbar.horizontalScrollbarSize": 10,
+    "editor.scrollBeyondLastColumn": 4,
+    "editor.tabSize": 4,
+    "editor.wordWrapColumn": 80,
+    "editor.fontSize": 14
+}

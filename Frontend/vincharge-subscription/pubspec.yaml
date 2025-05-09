@@ -1,0 +1,44 @@
+name: VinCharge
+description: "VinCharge Subscription Frontend"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  http: ^1.1.0
+  provider: ^6.0.5
+  shared_preferences: ^2.2.2
+  image_picker: ^1.0.7
+  path_provider: ^2.1.1
+  intl: ^0.19.0
+  dotted_border: ^2.1.0
+  permission_handler: ^11.0.0  # Updated to latest version
+  # image_gallery_saver: ^2.0.3  # Commented out due to build issues
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+    - assets/vinfast_logo.png
+    - assets/evn_logo.png
+    - assets/qr_code.png
+    - assets/flags/
+  
+  # fonts:
+  #   - family: Roboto
+  #     fonts:
+  #       - asset: assets/fonts/Roboto-Regular.ttf
+  #       - asset: assets/fonts/Roboto-Bold.ttf
+  #         weight: 700
+  #       - asset: assets/fonts/Roboto-Light.ttf
+  #         weight: 300
