@@ -1,0 +1,174 @@
+% Professional CV - Single Page Optimized
+\documentclass[10pt,a4paper]{article}
+
+% Essential packages
+\usepackage[top=0.5cm, bottom=0.45cm, left=1.0cm, right=1.0cm]{geometry}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{microtype}
+\usepackage{fontawesome5}
+\usepackage{tikz}
+\usepackage{tcolorbox}
+
+% Use modern font
+\usepackage[defaultsans,scale=0.95]{opensans}
+\renewcommand\familydefault{\sfdefault}
+\linespread{1.12}
+
+% Define color palette
+\definecolor{primary}{RGB}{30, 50, 100}
+\definecolor{secondary}{RGB}{0, 128, 128}
+\definecolor{text}{RGB}{52, 52, 52}
+\definecolor{lightgray}{RGB}{240, 240, 240}
+\definecolor{darkgray}{RGB}{80, 80, 80}
+
+% Setup hyperlinks
+\hypersetup{
+    colorlinks=true,
+    linkcolor=secondary,
+    urlcolor=secondary,
+    pdftitle={Ha Van Dung - Resume}
+}
+
+% Customize section titles
+\titleformat{\section}
+    {\fontsize{12}{14}\bfseries\color{primary}}
+    {}{0em}
+    {}
+    [{\color{lightgray}\titlerule[0.5pt]}]
+\titlespacing{\section}{0pt}{8pt}{5pt}
+
+% Custom commands
+\newcommand{\contactinfo}[3]{
+    \makebox[0pt][l]{\textcolor{secondary}{#1}}%
+    \hspace{16pt}\href{#2}{#3}
+}
+
+\newcommand{\projectitem}[5]{
+    \noindent\begin{tcolorbox}[
+        colback=white,
+        colframe=lightgray,
+        boxrule=0.3pt,
+        arc=2pt,
+        top=3pt,
+        bottom=3pt,
+        left=6pt,
+        right=6pt
+    ]
+        \noindent\textbf{\color{primary}#1} \hfill \textcolor{darkgray}{\scriptsize#2}\\[1pt]
+        {\small\color{secondary}#3}\\[1pt]
+        {\scriptsize\color{darkgray}#4}\\[3pt]
+        #5
+    \end{tcolorbox}
+}
+
+% Begin document
+\begin{document}
+\pagestyle{empty}
+
+% Header Section
+\begin{center}
+    \textbf{\fontsize{22}{26}\selectfont\color{primary}HA VAN DUNG}\\[2pt]
+    \textcolor{secondary}{\normalsize Fullstack Developer}\\[6pt]
+    
+    % Contact Information
+    \begin{tabular*}{\textwidth}{@{}l@{\extracolsep{\fill}}c@{\extracolsep{\fill}}r@{}}
+        \contactinfo{\faPhone}{tel:+84327250461}{+84 32 725 0461} &
+        \contactinfo{\faEnvelope}{mailto:dungken2211@gmail.com}{dungken2211@gmail.com} &
+        \contactinfo{\faGlobe}{}{Thu Duc, HCMC} \\[3pt]
+        \contactinfo{\faLinkedin}{https://linkedin.com/in/dungdev}{linkedin.com/in/dungdev} &
+        \contactinfo{\faGithub}{https://github.com/dungken}{github.com/dungken} &
+        \contactinfo{\faYoutube}{https://youtube.com/@dungkenn}{youtube.com/@dungkenn}
+    \end{tabular*}
+\end{center}
+
+\vspace{2pt}
+\hrule height 0.3pt
+\vspace{6pt}
+
+% Professional Summary
+\section{PROFESSIONAL SUMMARY}
+\color{text}\small
+Experienced fullstack developer with a strong foundation in modern web and mobile technologies. Specialized in building scalable applications with clean architecture, payment integrations, and real-time features. Passionate about creating efficient solutions that solve real-world problems through innovative technology.
+
+\vspace{6pt}
+
+% Project Experience
+\section{PROJECT EXPERIENCE}
+
+\projectitem{VinCharge Subscription Platform (Real-world client project) }{Mar 2025 -- Present}
+    {Java 17 • Spring Boot 3.2 • PostgreSQL • VNPay • JWT • Cloudinary}
+    {\href{https://github.com/dungken}{\textcolor{secondary}{\faGithub* GitHub}} | \href{YOUR_YOUTUBE_DEMO_LINK}{\textcolor{secondary}{\faYoutube* Demo}}}
+    {\begin{itemize}[leftmargin=12pt,itemsep=1pt,parsep=0pt,topsep=0pt,after=\vspace{-2pt},label={•}]
+        \item Enterprise EV charging subscription management system for VinFast with complete billing cycle.
+        \item Integrated VNPay payment gateway with HMAC-SHA512 encryption and IPN handling.
+        \item Implemented JWT authentication with refresh tokens and OTP-based password recovery.
+        \item Designed optimized PostgreSQL schema with Flyway migrations and audit fields.
+        \item Built layered REST architecture with OpenAPI documentation and global exception handling.
+        \item Automated email notifications via Gmail SMTP and Cloudinary for meter reading storage.
+    \end{itemize}}
+
+\vspace{3pt}
+
+\projectitem{Speaking English with AI (Collaborative project with a team of 4 developers) }{Feb 2025 -- May 2025}
+    {Flutter • Dart • BLoC • Clean Architecture • Hive • Speech Recognition}
+    {\href{https://github.com/dungken}{\textcolor{secondary}{\faGithub* GitHub}} | \href{YOUR_YOUTUBE_DEMO_LINK}{\textcolor{secondary}{\faYoutube* Demo}}}
+    {\begin{itemize}[leftmargin=12pt,itemsep=1pt,parsep=0pt,topsep=0pt,after=\vspace{-2pt},label={•}]
+        \item Cross-platform language learning app with AI-powered conversation practice and feedback.
+        \item Architected scalable Clean Architecture with BLoC pattern and repository interfaces.
+        \item Optimized audio recording with SurfaceView lifecycle management and buffer queue control.
+        \item Integrated speech-to-text with AI-driven feedback on pronunciation, grammar, and fluency.
+        \item Designed feature-first architecture with comprehensive dependency injection.
+        \item Built responsive UI with adaptive layouts and progress tracking analytics.
+    \end{itemize}}
+
+\vspace{3pt}
+
+\projectitem{Trello Clone - Project Management (Solo development project) }{Jan 2025 -- Apr 2025}
+    {Node.js • Express • MongoDB • Socket.IO • JWT • Cloudinary • Brevo}
+    {\href{https://github.com/dungken}{\textcolor{secondary}{\faGithub* GitHub}} | \href{YOUR_YOUTUBE_DEMO_LINK}{\textcolor{secondary}{\faYoutube* Demo}}}
+    {\begin{itemize}[leftmargin=12pt,itemsep=1pt,parsep=0pt,topsep=0pt,after=\vspace{-2pt},label={•}]
+        \item Full-featured kanban board with real-time collaboration via Socket.IO for agile project management.
+        \item Designed RESTful API with Express.js following MVC architecture and versioned endpoints.
+        \item Implemented JWT authentication with refresh tokens, cookie storage, and route protection.
+        \item Developed complex MongoDB aggregation pipelines with pagination and filtering.
+        \item Integrated Cloudinary for file attachments and Brevo for automated email notifications.
+        \item Created advanced invitation system with role-based access control and board sharing.
+    \end{itemize}}
+
+\vspace{6pt}
+
+% Additional Sections
+\section{EDUCATION}
+\noindent\textbf{Bachelor of Science in Information Technology} \hfill \textcolor{darkgray}{\small 2022 -- 2026}\\[1pt]
+\textcolor{darkgray}{\small University of Transport and Communications, Ho Chi Minh City}
+
+\vspace{6pt}
+
+\section{CERTIFICATIONS \& ACHIEVEMENTS}
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{\small International Collegiate Programming Contest}\\[1pt]
+    \href{https://github.com/dungken/MyResume/blob/master/Certificates/icpc.png}{\textcolor{secondary}{\scriptsize View Certificate}}
+\end{minipage}%
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{\small Scientific Research Certificate}\\[1pt]
+    \href{https://github.com/dungken/MyResume/blob/master/Certificates/nckh.png}{\textcolor{secondary}{\scriptsize View Certificate}}
+\end{minipage}
+
+\vspace{4pt}
+
+\begin{minipage}[t]{0.5\textwidth}
+    \textbf{\small Leetcode Top Interview 150 - YouTube Series} \hfill \textcolor{darkgray}\\[1pt]
+    \href{https://www.youtube.com/playlist?list=PLE9QkkVvuT1kc_pgqSPTvgggPg37ZHA6V}{\textcolor{secondary}{\scriptsize Watch Series}}
+\end{minipage}%
+
+\vspace{6pt}
+
+\section{LANGUAGES}
+\textbf{\color{darkgray}\small Vietnamese:} \textcolor{text}{\small Native} \hspace{15pt} \textbf{\color{darkgray}\small English:} \textcolor{text}{\small  Able to use in professional and technical work environments }
+
+\end{document}
